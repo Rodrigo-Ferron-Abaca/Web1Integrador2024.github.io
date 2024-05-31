@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Web1 integrador</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h4>LaPromo</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Articulo.html">Informacion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conForm">
+    <h1>Formulario de Inscripcion</h1>
+    <form id="contactForm" class="form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" maxlength="50" required>
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" maxlength="50" required>
+        <br>
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required>
+        <br>
+        <label for="edad">Edad:<span id="edadValue">25</span></label>
+        <input type="range" id="edad" name="edad" min="0" max="100" value="25" oninput="document.getElementById('edadValue').textContent = this.value">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="usuarioLol">Usuario de LoL:</label>
+        <input type="text" id="usuarioLol" name="usuarioLol" placeholder="NameTag#LAS" required>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="result" style="display: none;"></div>
+    </main>
+
+    <footer>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
