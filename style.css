@@ -196,15 +196,15 @@ footer{
     margin-right: 8em;
 }
 
-#carousel {
+#carrusel {
     height: 30em;
     overflow: hidden;
 }
-#carousel img {
+#carrusel img {
     width: 90em;
     display: none;
 }
-#carousel img.active {
+#carrusel img.active {
     display: flex;
 }
 
